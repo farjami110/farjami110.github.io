@@ -1,0 +1,323 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 0 0 0;
+    /* Adds padding at the bottom to prevent content from being hidden behind the footer */
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    /* Adjust as needed to ensure spacing is sufficient */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* Horizontally centers the content */
+    align-items: center;
+    /* Vertically centers the content */
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+
+
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    padding-left: 20px;
+}
+
+section#experience,
+section#research-interests {
+    margin-top: 2rem;
+}
+
+section#experience ul,
+section#research-interests ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#experience li,
+section#research-interests li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.publication-list {
+    list-style: none;
+    padding: 0;
+}
+
+.publication-list li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.publication-list li strong {
+    display: block;
+    font-weight: bold;
+    color: #444;
+}
+
+.publication-list li em {
+    font-style: italic;
+    color: #555;
+}
+
+.publication-list li a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.publication-list li a:hover {
+    text-decoration: underline;
+}
+
+.scroll-container {
+    max-height: 400px;
+    /* Adjust this value as needed */
+    overflow-y: auto;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-list li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-list li strong {
+    font-weight: bold;
+    color: #444;
+}
+
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-container iframe {
+    width: 80%;
+    /* Adjusts the width as needed */
+    max-width: 1000px;
+    /* Ensures a maximum size for larger screens */
+    height: 600px;
+    /* Adjust this height as needed */
+    border: none;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.contact-list li {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-list li strong {
+    font-weight: bold;
+    color: #444;
+}
+
+.contact-list li a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-list li a:hover {
+    text-decoration: underline;
+}
+
+.teaching-list {
+    list-style: none;
+    padding: 0;
+}
+
+.teaching-list li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.teaching-list li strong {
+    font-weight: bold;
+    color: #444;
+}
+
+.link {
+    color: #2575fc;
+    /* Set the color for handout links */
+    font-weight: bold;
+    /* Make the handout links bold */
+    text-decoration: none;
+    /* Remove underline from links */
+    margin-left: 5px;
+    /* Add some spacing between the text and the handout link */
+    font-size: 0.9em;
+    /* Slightly smaller font size to differentiate */
+}
+
+.link:hover {
+    text-decoration: underline;
+    /* Add underline on hover for better visibility */
+    color: #1a5bbf;
+    /* Slightly darker color on hover */
+}
+
+p {
+    text-align: justify;
+}
+
+.chatbot-container {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.chatbot-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.chatbot-text {
+    max-width: 500px;
+}
+
+.chatbot-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #2575fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.chatbot-link:hover {
+    background-color: #1a5bbf;
+}

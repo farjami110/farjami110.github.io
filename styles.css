@@ -341,48 +341,37 @@ p {
         padding-top: 1rem;
     }
 
-    /* Media Query for Mobile Devices */
-    @media (max-width: 768px) {
-        .about-content {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .profile-image {
-            width: 120px;
-            height: 120px;
-            margin-bottom: 1rem;
-        }
-
-        .about-text {
-            padding-left: 0;
-            padding-top: 1rem;
-        }
-
-        main {
-            padding: 1rem;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-        }
-
-        p {
-            font-size: 1rem;
-        }
+    /* Adjust for Larger Screens */
+    .about-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        /* Adds some spacing between image and text */
     }
 
-    @media (max-width: 480px) {
-        h2 {
-            font-size: 1.5rem;
+    /* Force Image to Stay Small and Text Responsive */
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        float: left;
+        /* Ensures the image stays on the left */
+        margin-right: 1rem;
+    }
+
+    /* Mobile Adjustments */
+    @media (max-width: 768px) {
+        .profile-image {
+            float: none;
+            /* Removes floating on mobile */
+            display: block;
+            margin: 0 auto 1rem auto;
+            /* Centers the image on mobile */
         }
 
-        p {
-            font-size: 0.9rem;
-        }
-
-        main {
-            padding: 1rem;
+        .about-content {
+            display: block;
+            /* Switches to block layout for easier reading on mobile */
         }
     }

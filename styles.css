@@ -280,6 +280,24 @@ section#research-interests li {
     /* Slightly darker color on hover */
 }
 
+/* Custom Underline Style */
+.styled-link {
+    color: #2575fc;
+    /* Matches the blue tone of your website */
+    font-weight: none;
+    /* Makes the link stand out */
+    text-decoration: none !important;
+    /* Removes the default underline */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+.styled-link:hover {
+    color: #ffeb3b;
+    /* Changes the color on hover to a highlight */
+}
+
 p {
     text-align: justify;
 }

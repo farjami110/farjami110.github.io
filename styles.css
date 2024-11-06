@@ -429,7 +429,7 @@ p {
     }
 
     /* Base Styles */
-    .video-container {
+    .video {
         position: relative;
         width: 100%;
         max-width: 640px;
@@ -441,7 +441,7 @@ p {
         /* Center the video container */
     }
 
-    .video-container iframe {
+    .video iframe {
         position: absolute;
         top: 0;
         left: 0;

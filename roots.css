@@ -15,3 +15,19 @@
 .persian-name{font:24px/1.8 Tahoma,Arial,sans-serif;color:var(--accent);text-align:left}
 .contribution{border-top:1px solid var(--line);margin-top:24px;padding-top:20px}.contribution a{font:14px Arial,sans-serif}
 .connection-path{border-top:1px solid var(--line);padding:28px 0 35px}.connection-path h2{font-size:30px}.connection-path ol{columns:3;column-gap:40px;padding-left:24px;max-height:460px;overflow:auto}.connection-path li{break-inside:avoid;padding:5px 0;font-size:14px}.connection-path button{border:0;background:none;color:var(--blue);font:15px/1.6 Arial,sans-serif;text-align:left;cursor:pointer;padding:5px}.connection-path button[aria-current]{font-weight:bold;text-decoration:underline}@media(max-width:800px){.connection-path ol{columns:2}}@media(max-width:560px){.connection-path ol{columns:1}}
+/* Keep the wide genealogy inside its own scrollable viewport. */
+@media screen and (max-width: 600px) {
+  .roots-intro { display: block; }
+  .roots-tools { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .roots-tools label { grid-column: 1 / -1; min-width: 0; }
+  .roots-tools input, .roots-tools select { width: 100%; min-width: 0; max-width: 100%; }
+  .roots-tools button, .person button, .connection-path button { min-height: 44px; }
+  .root-shortcuts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .root-shortcuts button { min-width: 0; padding: 10px; overflow-wrap: anywhere; font-size: 14px; }
+  .root-shortcuts button img { flex-shrink: 0; width: 30px; height: 40px; }
+  .roots-workspace { min-width: 0; grid-template-columns: minmax(0, 1fr); }
+  .graph-viewport { min-width: 0; max-width: 100%; height: 360px; height: min(55svh, 430px); }
+  .person { font-size: 18px; }
+  .connection-path ol { columns: 1; max-height: none; overflow: visible; }
+  .search-results { max-height: 300px; }
+}

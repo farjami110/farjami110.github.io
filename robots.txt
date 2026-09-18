@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /previous-website-before-redesign/
+Disallow: /website-ready/
 Sitemap: https://farjami110.github.io/sitemap.xml
